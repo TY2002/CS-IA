@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3km-vp-kR3">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Play Audio-->
+        <scene sceneID="4JI-mt-y49">
+            <objects>
+                <viewController id="TYq-bY-uN6" customClass="PlayAudioViewController" customModule="CS_IA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JBC-9g-AyG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zS1-NW-WfA">
+                                <rect key="frame" x="8" y="52" width="359" height="607"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vjy-6m-jEU">
+                                        <rect key="frame" x="0.0" y="0.0" width="114.5" height="607"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vi9-fu-kDf">
+                                                <rect key="frame" x="0.0" y="0.0" width="114.5" height="60.5"/>
+                                                <state key="normal" image="imageA" backgroundImage="background">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="playSound:" destination="TYq-bY-uN6" eventType="touchUpInside" id="Twq-AQ-BBs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSg-8h-1cC">
+                                                <rect key="frame" x="0.0" y="68.5" width="114.5" height="60"/>
+                                                <state key="normal" image="imageD" backgroundImage="background">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="playSound:" destination="TYq-bY-uN6" eventType="touchUpInside" id="hkf-zf-5y0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXe-VE-65r">
+                                                <rect key="frame" x="0.0" y="136.5" width="114.5" height="60.5"/>
+                                                <state key="normal" image="imageG" backgroundImage="background">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="playSound:" destination="TYq-bY-uN6" eventType="touchUpInside" id="9DG-6p-DSR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ty7-W6-QCd">
+                                                <rect key="frame" x="0.0" y="205" width="114.5" height="60.5"/>
+                                                <state key="normal" image="imageJ" backgroundImage="background">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="playSound:" destination="TYq-bY-uN6" eventType="touchUpInside" id="Ete-Vr-Lae"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUN-cI-BHH">
+                                                <rect key="frame" x="0.0" y="273.5" width="114.5" height="60"/>
+                                                <state key="normal" image="imageM" backgroundImage="background">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="playSound:" destination="TYq-bY-uN6" eventType="touchUpInside" id="3mD-Ho-8pi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTg-Xb-XMd">
+                                                <rect key="frame" x="0.0" y="341.5" width="114.5" height="60.5"/>
+                                                <state key="normal" image="imageP" backgroundImage="background">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="playSound:" destination="TYq-bY-uN6" eventType="touchUpInside" id="jDC-bf-7kJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDl-eO-vvH">
+                                                <rect key="frame" x="0.0" y="410" width="114.5" height="60.5"/>
+                                                <state key="normal" image="imageS" backgroundImage="background">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="playSound:" destination="TYq-bY-uN6" eventType="touchUpInside" id="2tu-E9-O1Q"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nhd-Rp-nU2">
+                                                <rect key="frame" x="0.0" y="478.5" width="114.5" height="60"/>
+                                                <state key="normal" image="imageV" backgroundImage="background">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="playSound:" destination="TYq-bY-uN6" eventType="touchUpInside" id="qyl-bd-18J"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bg1-Cw-9V0">
+                                                <rect key="frame" x="0.0" y="546.5" width="114.5" height="60.5"/>
+                                                <state key="normal" image="imageY" backgroundImage="background">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="playSound:" destination="TYq-bY-uN6" eventType="touchUpInside" id="4nW-MC-bPT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hDS-yO-wI1">
+                                        <rect key="frame" x="122.5" y="0.0" width="114" height="607"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5V8-e3-282">
+                                                <rect key="frame" x="0.0" y="0.0" width="114" height="60.5"/>
+                                                <state key="normal" image="imageB" backgroundImage="background"/>
+                                                <connections>
+                                                    <action selector="playSound:" destination="TYq-bY-uN6" eventType="touchUpInside" id="Tzn-fY-Myx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5b4-2m-kC0">
+                                                <rect key="frame" x="0.0" y="68.5" width="114" height="60"/>
+                                                <state key="normal" image="imageE" backgroundImage="background">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="playSound:" destination="TYq-bY-uN6" eventType="touchUpInside" id="y1A-af-8MI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wb-kc-0Pm">
+                                                <rect key="frame" x="0.0" y="136.5" width="114" height="60.5"/>
+                                                <state key="normal" image="imageH" backgroundImage="background"/>
+                                                <connections>
+                                                    <action selector="playSound:" destination="TYq-bY-uN6" eventType="touchUpInside" id="Cqc-Gc-7kH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aeu-yJ-SFr">
+                                                <rect key="frame" x="0.0" y="205" width="114" height="60.5"/>
+                                                <state key="normal" image="imageK" backgroundImage="background">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="playSound:" destination="TYq-bY-uN6" eventType="touchUpInside" id="2lU-1h-5EH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E7g-lH-l8s">
+                                                <rect key="frame" x="0.0" y="273.5" width="114" height="60"/>
+                                                <state key="normal" image="imageN" backgroundImage="background"/>
+                                                <connections>
+                                                    <action selector="playSound:" destination="TYq-bY-uN6" eventType="touchUpInside" id="eDY-Jt-lqX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avT-Pt-ujc">
+                                                <rect key="frame" x="0.0" y="341.5" width="114" height="60.5"/>
+                                                <state key="normal" image="imageQ" backgroundImage="background">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="playSound:" destination="TYq-bY-uN6" eventType="touchUpInside" id="Eq0-GW-9cu"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ES-WO-n8h">
+                                                <rect key="frame" x="0.0" y="410" width="114" height="60.5"/>
+                                                <state key="normal" image="imageT" backgroundImage="background">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="playSound:" destination="TYq-bY-uN6" eventType="touchUpInside" id="gQq-1T-jfj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdJ-b1-Wci">
+                                                <rect key="frame" x="0.0" y="478.5" width="114" height="60"/>
+                                                <state key="normal" image="imageW" backgroundImage="background">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="playSound:" destination="TYq-bY-uN6" eventType="touchUpInside" id="3bD-9O-xyT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4JU-7U-4d2">
+                                                <rect key="frame" x="0.0" y="546.5" width="114" height="60.5"/>
+                                                <state key="normal" image="imageZ" backgroundImage="background">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="playSound:" destination="TYq-bY-uN6" eventType="touchUpInside" id="BbI-2W-WN3"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Qg1-Go-X29">
+                                        <rect key="frame" x="244.5" y="0.0" width="114.5" height="607"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kkx-U3-eHm">
+                                                <rect key="frame" x="0.0" y="0.0" width="114.5" height="60.5"/>
+                                                <state key="normal" image="imageC" backgroundImage="background"/>
+                                                <connections>
+                                                    <action selector="playSound:" destination="TYq-bY-uN6" eventType="touchUpInside" id="uoB-8r-G1a"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xs-Tw-oNc">
+                                                <rect key="frame" x="0.0" y="68.5" width="114.5" height="60"/>
+                                                <state key="normal" image="imageF" backgroundImage="background">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="playSound:" destination="TYq-bY-uN6" eventType="touchUpInside" id="HeI-PZ-GDb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeT-bS-oqn">
+                                                <rect key="frame" x="0.0" y="136.5" width="114.5" height="60.5"/>
+                                                <state key="normal" image="imageI" backgroundImage="background"/>
+                                                <connections>
+                                                    <action selector="playSound:" destination="TYq-bY-uN6" eventType="touchUpInside" id="9Zx-rL-WOG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54f-Bs-B6C">
+                                                <rect key="frame" x="0.0" y="205" width="114.5" height="60.5"/>
+                                                <state key="normal" image="imageL" backgroundImage="background">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="playSound:" destination="TYq-bY-uN6" eventType="touchUpInside" id="rhJ-I1-0re"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyL-8s-tfd">
+                                                <rect key="frame" x="0.0" y="273.5" width="114.5" height="60"/>
+                                                <state key="normal" image="imageO" backgroundImage="background"/>
+                                                <connections>
+                                                    <action selector="playSound:" destination="TYq-bY-uN6" eventType="touchUpInside" id="0bc-D0-xen"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cw7-PM-Zz7">
+                                                <rect key="frame" x="0.0" y="341.5" width="114.5" height="60.5"/>
+                                                <state key="normal" image="imageR" backgroundImage="background">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="playSound:" destination="TYq-bY-uN6" eventType="touchUpInside" id="JR8-fD-X42"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWe-DO-vAz">
+                                                <rect key="frame" x="0.0" y="410" width="114.5" height="60.5"/>
+                                                <state key="normal" image="imageU" backgroundImage="background">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="playSound:" destination="TYq-bY-uN6" eventType="touchUpInside" id="UM5-aE-o0Q"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Vx-8A-vdC">
+                                                <rect key="frame" x="0.0" y="478.5" width="114.5" height="60"/>
+                                                <state key="normal" image="imageX" backgroundImage="background">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="playSound:" destination="TYq-bY-uN6" eventType="touchUpInside" id="orX-Qr-2oA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tT-Uj-b97">
+                                                <rect key="frame" x="0.0" y="546.5" width="114.5" height="60.5"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.83105493915762652" blue="0.97086867862509685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hu4-GG-6Nd" firstAttribute="trailing" secondItem="zS1-NW-WfA" secondAttribute="trailing" constant="8" id="3SR-CY-Nzq"/>
+                            <constraint firstItem="zS1-NW-WfA" firstAttribute="leading" secondItem="hu4-GG-6Nd" secondAttribute="leading" constant="8" id="I4o-k0-9Kf"/>
+                            <constraint firstItem="zS1-NW-WfA" firstAttribute="top" secondItem="hu4-GG-6Nd" secondAttribute="top" constant="8" id="YGl-6A-7dQ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="zS1-NW-WfA" secondAttribute="bottom" constant="8" id="mZi-mk-dIi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hu4-GG-6Nd"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Play Audio" id="0zB-Fx-kWY">
+                        <rightBarButtonItems>
+                            <barButtonItem title="            " id="Weh-WD-1f8"/>
+                            <barButtonItem title="Item" image="instructions" id="xb3-7m-hXr">
+                                <connections>
+                                    <action selector="instructions:" destination="TYq-bY-uN6" id="AQy-ie-T9J"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bottomStackView" destination="zS1-NW-WfA" id="QJF-ym-bSV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ysC-WM-UDZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1350" y="-1208"/>
+        </scene>
+        <!--SpeechToText-->
+        <scene sceneID="1Q5-7J-IO4">
+            <objects>
+                <viewController id="bPF-f9-hIZ" customClass="SpeechToTextViewController" customModule="CS_IA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OHA-fU-Jqp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZd-CC-nlh">
+                                <rect key="frame" x="70" y="280" width="225" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <state key="normal" title="Start Speaking">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="micTapped:" destination="bPF-f9-hIZ" eventType="touchUpInside" id="FHd-mJ-Jh4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="textToHear" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bp4-WV-tYa">
+                                <rect key="frame" x="39" y="83" width="297" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wu5-XX-OSY">
+                                <rect key="frame" x="75" y="589" width="225" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <state key="normal" title="Choose Image">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadImagePicker:" destination="bPF-f9-hIZ" eventType="touchUpInside" id="pwd-fi-yVr"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5OQ-wR-bZ7">
+                                <rect key="frame" x="67" y="347" width="240" height="224"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.86166577924105403" blue="0.66471849515863857" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="bem-X1-Qgk"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="SpeechToText" id="es1-rh-8KW">
+                        <rightBarButtonItems>
+                            <barButtonItem title="            " id="kCg-As-s9w"/>
+                            <barButtonItem title="Item" image="instructions" id="ZOn-bU-joC">
+                                <connections>
+                                    <action selector="instructions:" destination="bPF-f9-hIZ" id="KIn-ri-3g6"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="5OQ-wR-bZ7" id="6UX-1q-jVx"/>
+                        <outlet property="micButton" destination="PZd-CC-nlh" id="qyI-et-OQY"/>
+                        <outlet property="textToHear" destination="Bp4-WV-tYa" id="CXP-ii-2eD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HBW-A8-bzj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1350" y="-551"/>
+        </scene>
+        <!--Start View Controller-->
+        <scene sceneID="o1f-dA-HGd">
+            <objects>
+                <viewController id="Poh-TX-2cs" customClass="StartViewController" customModule="CS_IA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kBZ-AW-3ka">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cua-A5-Q85">
+                                <rect key="frame" x="112" y="251" width="150" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="segueToLogin:" destination="Poh-TX-2cs" eventType="touchUpInside" id="O5l-BD-6Cl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGv-Ch-4fD">
+                                <rect key="frame" x="112" y="352" width="150" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <action selector="segueToSignUp:" destination="Poh-TX-2cs" eventType="touchUpInside" id="ykQ-L3-haW"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="ZzV-h1-lNi">
+                                <rect key="frame" x="112" y="251" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="signUp" translatesAutoresizingMaskIntoConstraints="NO" id="fd3-ax-qO5">
+                                <rect key="frame" x="112" y="352" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="gC3-mY-HR6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eeD-R0-VpR"/>
+                    <connections>
+                        <outlet property="loginButton" destination="cua-A5-Q85" id="Du0-JZ-gTh"/>
+                        <outlet property="signUpButton" destination="nGv-Ch-4fD" id="ABt-FC-Jzn"/>
+                        <segue destination="oVE-i3-a5c" kind="show" identifier="startToLogin" id="43a-2k-dfX"/>
+                        <segue destination="sE7-1l-USY" kind="show" identifier="startToSignUp" id="ysx-Gp-1hM"/>
+                        <segue destination="CMX-sV-QTB" kind="presentation" identifier="alreadyLoggedIn" modalPresentationStyle="overFullScreen" id="dyO-K7-t47"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OEN-uh-tOQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1823.2" y="-468.21589205397305"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="HHM-zS-qSL">
+            <objects>
+                <viewController id="oVE-i3-a5c" customClass="LoginViewController" customModule="CS_IA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WT2-Ub-Hbv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c1o-Ag-z3R">
+                                <rect key="frame" x="139" y="254" width="168" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bDO-qp-QZh">
+                                <rect key="frame" x="139" y="331" width="168" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoR-yX-x6d">
+                                <rect key="frame" x="159" y="404" width="57" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="login:" destination="oVE-i3-a5c" eventType="touchUpInside" id="d7g-h2-Hdj"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="uGt-lH-ZIF">
+                                <rect key="frame" x="67" y="230" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="password" translatesAutoresizingMaskIntoConstraints="NO" id="daQ-bs-qeY">
+                                <rect key="frame" x="67" y="307" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9G5-bc-Ahn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3zw-w3-tAn"/>
+                    <connections>
+                        <outlet property="email" destination="c1o-Ag-z3R" id="cwt-hb-D2e"/>
+                        <outlet property="password" destination="bDO-qp-QZh" id="x68-Wq-Ej4"/>
+                        <segue destination="CMX-sV-QTB" kind="presentation" identifier="loginToHome" modalPresentationStyle="overFullScreen" id="V3x-iP-Y0I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="esP-c9-qIV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1044" y="-843.32833583208401"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VfN-LA-dLo">
+            <objects>
+                <navigationController id="3km-vp-kR3" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FLU-bf-ZV2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Poh-TX-2cs" kind="relationship" relationship="rootViewController" id="dFA-T3-hca"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9m5-P9-ksI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2599" y="-468"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="1C1-pU-9uL">
+            <objects>
+                <viewController id="sE7-1l-USY" customClass="SignUpViewController" customModule="CS_IA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wBW-7k-1Mc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8dV-sg-5ki">
+                                <rect key="frame" x="112" y="215" width="223" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qa2-bi-P96">
+                                <rect key="frame" x="112" y="292" width="223" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="aX3-cF-gk5">
+                                <rect key="frame" x="40" y="190" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="password" translatesAutoresizingMaskIntoConstraints="NO" id="AUS-NQ-rcB">
+                                <rect key="frame" x="40" y="268" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nn1-Qt-mtx">
+                                <rect key="frame" x="113" y="370" width="222" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="P6i-9j-9fj">
+                                <rect key="frame" x="40" y="350" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NoN-js-tsn">
+                                <rect key="frame" x="148" y="447" width="78" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <action selector="login:" destination="oVE-i3-a5c" eventType="touchUpInside" id="d1O-08-T1e"/>
+                                    <action selector="signUp:" destination="sE7-1l-USY" eventType="touchUpInside" id="iHZ-pu-uyV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="iQC-OA-ZFn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5ct-Sw-giZ"/>
+                    <connections>
+                        <outlet property="email" destination="8dV-sg-5ki" id="Mg0-9N-Xql"/>
+                        <outlet property="password" destination="qa2-bi-P96" id="HUc-I7-kjE"/>
+                        <outlet property="passwordConfirm" destination="Nn1-Qt-mtx" id="j1e-aB-5Lj"/>
+                        <segue destination="CMX-sV-QTB" kind="presentation" identifier="signUpToHome" modalPresentationStyle="overFullScreen" id="OVV-KN-95B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7VW-ux-ebi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1044" y="-37.331334332833585"/>
+        </scene>
+        <!--TextToSpeech-->
+        <scene sceneID="32d-sx-9AP">
+            <objects>
+                <viewController id="ca1-Bz-df7" customClass="TextToSpeechViewController" customModule="CS_IA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GKo-ff-xMu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAJ-OF-ZMe">
+                                <rect key="frame" x="162" y="270" width="59" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <state key="normal" title="Pause"/>
+                                <connections>
+                                    <action selector="pauseSpeech:" destination="ca1-Bz-df7" eventType="touchUpInside" id="SCv-WB-2Gk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oe9-Y8-DqK">
+                                <rect key="frame" x="59" y="268" width="62" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <state key="normal" title="Speak"/>
+                                <connections>
+                                    <action selector="speak:" destination="ca1-Bz-df7" eventType="touchUpInside" id="Qd4-xi-urT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYd-dH-q4n">
+                                <rect key="frame" x="263" y="274" width="44" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopSpeech:" destination="ca1-Bz-df7" eventType="touchUpInside" id="Fyy-xd-2WB"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="unE-o2-CfT">
+                                <rect key="frame" x="67" y="92" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.76752487888119048" green="0.95737086458851106" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="8Hp-tw-aq7"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="TextToSpeech" id="wuW-np-HWu">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Save" image="save" id="ncv-Kq-Tre">
+                                <connections>
+                                    <action selector="saveText:" destination="ca1-Bz-df7" id="lmr-oq-Ebv"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="instructions" id="sN1-e4-HQF">
+                                <connections>
+                                    <action selector="instructions:" destination="ca1-Bz-df7" id="RqV-Fm-ZWL"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pauseButton" destination="KAJ-OF-ZMe" id="VRz-gC-XK6"/>
+                        <outlet property="saveButton" destination="ncv-Kq-Tre" id="0F8-gH-xz3"/>
+                        <outlet property="speakButton" destination="oe9-Y8-DqK" id="lBG-5M-XCC"/>
+                        <outlet property="stopButton" destination="yYd-dH-q4n" id="yFj-Fu-Kzm"/>
+                        <outlet property="textToSay" destination="unE-o2-CfT" id="nyZ-ic-F5J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CtH-A9-i0z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1350" y="121"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hJr-vT-3cy">
+            <objects>
+                <navigationController id="CMX-sV-QTB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="qNz-9N-su9"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DCA-KE-yXZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="j08-hC-10c" kind="relationship" relationship="rootViewController" id="xiY-Wa-6jj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8l5-3W-uds" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-258" y="-440"/>
+        </scene>
+        <!--Navigation Table View Controller-->
+        <scene sceneID="BjR-8f-5gj">
+            <objects>
+                <tableViewController id="j08-hC-10c" customClass="NavigationTableViewController" customModule="CS_IA" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cA0-n8-3px">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.88235294117647056" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="playAudio" id="8K7-8I-6KL">
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8K7-8I-6KL" id="Qtb-zV-vYk">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="TYq-bY-uN6" kind="show" identifier="navigationToPA" id="w5g-qS-vD2"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="speechToText" id="ApF-y8-mIo">
+                                <rect key="frame" x="0.0" y="71.5" width="375" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ApF-y8-mIo" id="5ct-rl-Fxl">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="bPF-f9-hIZ" kind="show" identifier="navigationToS2T" id="xl3-JA-noI"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="textToSpeech" id="0hG-XA-5G3">
+                                <rect key="frame" x="0.0" y="115" width="375" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0hG-XA-5G3" id="Mef-Fq-EZi">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="ca1-Bz-df7" kind="show" identifier="navigationToT2S" id="eTC-0N-ilI"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="j08-hC-10c" id="4Og-BR-3Pq"/>
+                            <outlet property="delegate" destination="j08-hC-10c" id="DnV-Ej-RUQ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="lSn-hU-Lhm"/>
+                    <connections>
+                        <segue destination="5F2-ha-E92" kind="unwind" identifier="unwindToStartViewController" unwindAction="prepareForUnwindWithSegue:" id="len-tb-SwE"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yGP-4K-CUD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="5F2-ha-E92" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="542" y="-440"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="100" height="60"/>
+        <image name="check" width="64" height="64"/>
+        <image name="email" width="64" height="64"/>
+        <image name="imageA" width="186" height="113"/>
+        <image name="imageB" width="185" height="109"/>
+        <image name="imageC" width="183" height="111"/>
+        <image name="imageD" width="188" height="117"/>
+        <image name="imageE" width="186" height="116"/>
+        <image name="imageF" width="186" height="116"/>
+        <image name="imageG" width="187" height="115"/>
+        <image name="imageH" width="187" height="114"/>
+        <image name="imageI" width="188" height="117"/>
+        <image name="imageJ" width="186" height="115"/>
+        <image name="imageK" width="189" height="116"/>
+        <image name="imageL" width="188" height="113"/>
+        <image name="imageM" width="187" height="119"/>
+        <image name="imageN" width="187" height="111"/>
+        <image name="imageO" width="185" height="106"/>
+        <image name="imageP" width="188" height="109"/>
+        <image name="imageQ" width="189" height="110"/>
+        <image name="imageR" width="185" height="112"/>
+        <image name="imageS" width="185" height="110"/>
+        <image name="imageT" width="190" height="109"/>
+        <image name="imageU" width="185" height="107"/>
+        <image name="imageV" width="187" height="107"/>
+        <image name="imageW" width="184" height="109"/>
+        <image name="imageX" width="183" height="108"/>
+        <image name="imageY" width="183" height="109"/>
+        <image name="imageZ" width="192" height="110"/>
+        <image name="instructions" width="25" height="25"/>
+        <image name="login" width="64" height="64"/>
+        <image name="password" width="64" height="64"/>
+        <image name="save" width="38" height="38"/>
+        <image name="signUp" width="64" height="64"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="V3x-iP-Y0I"/>
+    </inferredMetricsTieBreakers>
+</document>
