@@ -34,7 +34,11 @@ Instructions for each tool can be found by tapping the button at the top right c
 ------------Credit------------
 
 Firebase Firestore: For providing a free cloud database and authentication system
+
 Apple: For creating Swift and associated built-in libraries
-My client: For providing images for the buttons used in the Play Audio tool
+
+My client: For providing images for the buttons used in the Play Audio tool & the phonics sounds used in the Play Audio tool
+
 My CS teacher: For creating the DDsounds library
-Credit for parts of code used is given in the form of comments within the code
+
+Credit for source code is given in the form of comments within the code
