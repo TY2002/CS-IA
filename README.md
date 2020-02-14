@@ -23,6 +23,7 @@ The app has accomplished the task of being an effective solution, as my client h
 At the present moment in the user signup process, only the format of the email is checked and it isn’t verified if it is an actual email address. In the future, an improvement to this system would be for the product to send a verification email to the email that the user entered in order to verify its validity.
 Another improvement that could be implemented would be to add child friendly pictures on each page, and to increase the amount of content available in the app. The phonics sounds that my client asked for were for the first four units of Book One in the phonics curriculum, and other units could also be added in the future.
 
+
 ------------How to Run the App on an iOS device------------
 
 Tap on the app once it has been installed on an iOS device.
@@ -30,6 +31,16 @@ Tap on the app once it has been installed on an iOS device.
 ------------How to Use the App------------
 
 Instructions for each tool can be found by tapping the button at the top right corner of the screen containing the tool.
+
+------------Podfile Dependencies------------
+
+pod 'Firebase/Core'
+pod 'Firebase/Firestore'
+pod 'Firebase/Storage'
+pod 'Firebase/Analytics'
+pod 'FirebaseUI/Storage'
+pod 'Firebase/Auth'
+
 
 ------------Credit------------
 
