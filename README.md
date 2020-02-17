@@ -35,10 +35,15 @@ Instructions for each tool can be found by tapping the button at the top right c
 ------------Podfile Dependencies------------
 
 pod 'Firebase/Core'
+
 pod 'Firebase/Firestore'
+
 pod 'Firebase/Storage'
+
 pod 'Firebase/Analytics'
+
 pod 'FirebaseUI/Storage'
+
 pod 'Firebase/Auth'
 
 
